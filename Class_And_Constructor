@@ -1,0 +1,21 @@
+
+class Calisan:
+    def __init__(self,isim,soyisim,maas):
+        self.isim=isim
+        self.soyisim=soyisim
+        self.maas=maas
+        self.email=isim+soyisim+"@aybars.dorman.com"
+
+    def giveNameSurname(self):
+        return  self.isim +" " + self.soyisim
+
+    def giveMaas(self):
+        return self.maas
+
+    def giveEmail(self):
+        return self.email
+
+isci1 = Calisan("ali","seyit",1500)
+print(isci1.giveNameSurname())
+print(isci1.giveEmail())
+print(isci1.giveMaas())
