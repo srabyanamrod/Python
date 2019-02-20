@@ -1,10 +1,14 @@
 
 class Calisan:
+
+    zam_orani = 1.8
+    counter =0
     def __init__(self,isim,soyisim,maas):
         self.isim=isim
         self.soyisim=soyisim
         self.maas=maas
         self.email=isim+soyisim+"@aybars.dorman.com"
+        Calisan.counter=Calisan.counter +1
 
     def giveNameSurname(self):
         return  self.isim +" " + self.soyisim
@@ -14,8 +18,20 @@ class Calisan:
 
     def giveEmail(self):
         return self.email
+    def zam_yap(self):
+        self.maas= self.maas+self.maas*self.zam_orani
+        print("Yeni Maaş:" ,self.maas)
 
-isci1 = Calisan("ali","seyit",1500)
-print(isci1.giveNameSurname())
-print(isci1.giveEmail())
-print(isci1.giveMaas())
+#isci1 = Calisan("ali","seyit",1500)
+#print(isci1.giveNameSurname())
+#print(isci1.giveEmail())
+#print(isci1.giveMaas())
+
+# class variable
+calisan1 = Calisan("Ahmet","Kılıç",3000)
+print("ilk_maaş: ",calisan1.maas)
+calisan1.zam_yap()
+calisan2 = Calisan("aybars","dorman",5000)
+calisan3 = Calisan("Ferhat","Demir",7000)
+print("Çalışan İşçi Sayısı: " , Calisan.counter)
+
