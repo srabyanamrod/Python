@@ -1,0 +1,24 @@
+import numpy as np # linear algebra
+a=np.array([1,2,3])
+b=np.array([4,5,6])
+c=np.array([7,8,9])
+d=np.array([256,625,216])
+e=np.array([4,5,6])
+print(a+b)
+print(a-b)
+print(a*c)
+print(d/b)
+print(d*e)
+print(a**2)
+print(a<2)
+a = np.random.random((6,6))
+print(a.sum())
+print(a.max())
+print(a.min())
+print(a.sum(axis=0))
+print(a.sum(axis=1))
+print(np.sqrt(a))  # bir sayının kök cinsinden ifadesini alma
+print(np.square(a)) #a**2
+print(np.add(b,b)) # bir dizi içerisindeki elemanların sırasıyla toplanıp return edilmesi
+print(np.add(c,c))
+
