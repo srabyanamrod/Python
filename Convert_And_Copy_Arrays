@@ -1,0 +1,18 @@
+import numpy as np
+liste = [1,2,3,4] # List
+array = np.array([5,6,7,8]) #np.array
+liste2 = list(array)
+a = np.array([1,2,3,4])
+print(a)
+b=a
+print(b)
+b[0]=5
+print(b)
+c=a
+print(c)
+d= np.array([1,2,97])
+e= d.copy()
+e[2]=99
+f= d.copy()
+f[2]=98
+print("\n",d,"\n",e,"\n",f)
